@@ -1,0 +1,101 @@
+*, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  height: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+.navbar > a > h1 {
+  margin: 0;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit
+}
+
+.search-bar {
+  position: relative;
+  width: 100%; /* atau atur sesuai kebutuhan */
+  max-width: 400px; /* optional untuk responsif */
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* padding kanan untuk tempat tombol */
+  border-radius: 9999px; /* agar bulat seperti search bar modern */
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+#search-button {
+  position: absolute;
+  right: 10px; /* jarak dari kanan */
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+}
+
+#search-button:focus {
+  outline: none;
+}
+
+#search-button:hover {
+  color: #000;
+}
+
+.logo {
+  color: white;
+  margin-left: 25px
+}
+
+.nav-links {
+  color: white;
+  margin-right: 25px;
+
+}
+
+.nav-links > a {
+  color: inherit;
+  padding: 10px;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    height: 80px;
+    width: 100%;
+  }
+
+  .logo {
+    color: white;
+    font-size: 24px;
+  }
+
+  .search-bar {
+    position: relative;
+    width: 50%; /* atau atur sesuai kebutuhan */
+    max-width: 85px; /* optional untuk responsif */
+  }
+}
